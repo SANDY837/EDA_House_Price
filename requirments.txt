@@ -1,0 +1,8 @@
+flask
+mysql
+seaborn
+matplotlib
+io
+base64
+pandas
+numpy
