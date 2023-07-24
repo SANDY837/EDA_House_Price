@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seaborn Plot</title>
+</head>
+
+<style>
+   
+
+    h1, h2, h3 {
+        
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    div {
+        margin-bottom: 20px;
+    }
+
+    img {
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+    }
+
+    .plot-container {
+        display: flex;
+    }
+
+    .plot-container > div {
+        margin-left: 20px;
+
+    }
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 900vh;
+        background-color: #f7f7f7;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        text-align: center;
+        max-width: 1000px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 1s ease;
+    }
+
+  
+
+    p {
+        font-size: 18px;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
+<body>
+    <div class="container">
+    
+    
+    <h1>1.Univariate Analysis</h1>
+    <h3>Sale Price</h3>
+    <div class="plot-container">
+        
+        <div style="margin-left: 20px;">
+            <h2>Plot 1</h2>
+            <img src="data:image/png;base64,{{ plot_url1 }}" alt="Seaborn Plot 1">
+        </div>
+        
+        <div>
+            <h2>Plot 2</h2>
+            <img src="data:image/png;base64,{{ plot_url2 }}" alt="Seaborn Plot 2">
+        </div>
+    </div>
+    <h3>Flat Area</h3>
+    <div class="plot-container">
+        
+        <div style="margin-left: 20px;">
+            <h2>Plot 1</h2>
+            <img src="data:image/png;base64,{{ plot_url3 }}" alt="Seaborn Plot 3">
+        </div>
+        
+        <div>
+            <h2>Plot 2</h2>
+            <img src="data:image/png;base64,{{ plot_url4 }}" alt="Seaborn Plot 4">
+        </div>
+    </div>
+
+
+    
+
+    <h3>Lot Area (in Sqft)</h3>
+    <div class="plot-container">
+        
+        <div style="margin-left: 20px;">
+            <h2>Plot 1</h2>
+            <img src="data:image/png;base64,{{ plot_url7 }}" alt="Seaborn Plot 3">
+        </div>
+        
+        <div>
+            <h2>Plot 2</h2>
+            <img src="data:image/png;base64,{{ plot_url8 }}" alt="Seaborn Plot 4">
+        </div>
+    </div>
+
+    <h3>Area of the House from Basement (in Sqft)</h3>
+    <div class="plot-container">
+        
+        <div style="margin-left: 20px;">
+            <h2>Plot 1</h2>
+            <img src="data:image/png;base64,{{ plot_url9 }}" alt="Seaborn Plot 3">
+        </div>
+        
+        <div>
+            <h2>Plot 2</h2>
+            <img src="data:image/png;base64,{{ plot_url10 }}" alt="Seaborn Plot 4">
+        </div>
+    </div>
+
+
+    <h3>Basement Area (in Sqft)</h3>
+    <div class="plot-container">
+        
+        <div style="margin-left: 20px;">
+            <h2>Plot 1</h2>
+            <img src="data:image/png;base64,{{ plot_url11 }}" alt="Seaborn Plot 3">
+        </div>
+        
+        <div>
+            <h2>Plot 2</h2>
+            <img src="data:image/png;base64,{{ plot_ur112 }}" alt="Seaborn Plot 4">
+        </div>
+    </div>
+
+
+    <h3>Age of House (in Years)</h3>
+    <div class="plot-container">
+        
+        <div style="margin-left: 20px;">
+            <h2>Plot 1</h2>
+            <img src="data:image/png;base64,{{ plot_url13 }}" alt="Seaborn Plot 3">
+        </div>
+        
+        <div>
+            <h2>Plot 2</h2>
+            <img src="data:image/png;base64,{{ plot_url14 }}" alt="Seaborn Plot 4">
+        </div>
+    </div>
+
+
+    <h3>Living Area after Renovation (in Sqft)</h3>
+    <div class="plot-container">
+        
+        <div style="margin-left: 20px;">
+            <h2>Plot 1</h2>
+            <img src="data:image/png;base64,{{ plot_url15 }}" alt="Seaborn Plot 3">
+        </div>
+        
+        <div>
+            <h2>Plot 2</h2>
+            <img src="data:image/png;base64,{{ plot_url16 }}" alt="Seaborn Plot 4">
+        </div>
+    </div>
+
+    <h3>Lot Area after Renovation (in Sqft)</h3>
+    <div class="plot-container">
+        
+        <div style="margin-left: 20px;">
+            <h2>Plot 1</h2>
+            <img src="data:image/png;base64,{{ plot_url17 }}" alt="Seaborn Plot 3">
+        </div>
+        
+        <div>
+            <h2>Plot 2</h2>
+            <img src="data:image/png;base64,{{ plot_url18 }}" alt="Seaborn Plot 4">
+        </div>
+    </div>
+
+
+    
+
+    <a href="#" class="btn">Learn More</a>
+    </div>
+    
+</body>
+</html>

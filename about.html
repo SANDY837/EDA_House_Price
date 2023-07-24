@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About - Exploratory Data Analysis</title>
+  <style>
+    /* Reset some default styles for consistency */
+    body, h1, h2, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: magenta;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: cyan;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    nav a {
+      color: magenta;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    nav a:hover {
+      background-color: white;
+    }
+
+    /* About Section */
+    .about-section {
+      padding: 50px;
+    }
+
+    .about-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    /* Team Section */
+    .team-section {
+      background-color: #f1f1f1;
+      padding: 50px;
+    }
+
+    .team-member {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .team-member img {
+      max-width: 100px;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+
+    /* Results Section */
+    .results-section {
+      padding: 50px;
+    }
+
+    .results-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .results-section p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    /* Footer */
+    footer {
+      background-color: magenta;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Exploratory Data Analysis</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="about-section">
+    <h2>About Exploratory Data Analysis</h2>
+    <h4>Why do EDA</h4>
+        <ul>
+            <li>Model building</li>
+                <li>Analysis and reporting</li>
+                    <li>Validate assumptions</li>
+                        <li>Handling missing values</li>
+                            <li> feature engineering</li>
+                                <li>detecting outliers</li>
+
+                                </ul>
+        <h3>Remember EDA is an iterative process</h3>   
+
+        <p>
+            <h3>1.Univariate Analysis</h3>
+           <ul> 
+            <li>Univariate analysis focuses on analyzing each feature in the dataset independently.</li>
+            <li><h5>Distribution analysis:</h5> The distribution of each feature is examined to identify its shape, central tendency, and dispersion.<br>
+                <h6> The shape of a data distribution refers to its overall pattern or form as it is represented on a graph. Some common shapes of data distributions include:</h6>
+                Normal Distribution: A symmetrical and bell-shaped distribution where the mean, median, and mode are equal and the majority of the data falls in the middle of the distribution with gradually decreasing frequencies towards the tails.<br><br>
+    
+                Skewed Distribution: A distribution that is not symmetrical, with one tail being longer than the other. It can be either positively skewed (right-skewed) or negatively skewed (left-skewed).<br><br>
+    
+                Bimodal Distribution: A distribution with two peaks or modes.<br><br>
+    
+                Uniform Distribution: A distribution where all values have an equal chance of occurring.<br><br>
+    
+                The shape of the data distribution is important in identifying the presence of outliers, skewness, and the type of statistical tests and models that can be used for further analysis.<br><br>
+                <h5>Dispersion</h5>
+
+                Dispersion is a statistical term used to describe the spread or variability of a set of data. It measures how far the values in a data set are spread out from the central tendency (mean, median, or mode) of the data.<br><br>
+                There are several measures of dispersion, including:<br><br>
+
+                Range: The difference between the largest and smallest values in a data set.<br><br>
+
+                Variance: The average of the squared deviations of each value from the mean of the data set.<br><br>
+
+                Standard Deviation: The square root of the variance. It provides a measure of the spread of the data that is in the same units as the original data.<br><br>
+
+                Interquartile range (IQR): The range between the first quartile (25th percentile) and the third quartile (75th percentile) of the data.<br><br>
+
+                Dispersion helps to describe the spread of the data, which can help to identify the presence of outliers and skewness in the data.
+            </li>
+            <li> <h5>Identifying potential issues:</h5> Univariate analysis helps in identifying potential problems with the data such as outliers, skewness, and missing values
+            </li>
+
+            <h3> Steps of doing Univariate Analysis on Numerical columns</h3>
+Descriptive Statistics: Compute basic summary statistics for the column, such as mean, median, mode, standard deviation, range, and quartiles. These statistics give a general understanding of the distribution of the data and can help identify skewness or outliers.<br><br>
+
+Visualizations: Create visualizations to explore the distribution of the data. Some common visualizations for numerical data include histograms, box plots, and density plots. These visualizations provide a visual representation of the distribution of the data and can help identify skewness an outliers.<br><br>
+
+Identifying Outliers: Identify and examine any outliers in the data. Outliers can be identified using visualizations. It is important to determine whether the outliers are due to measurement errors, data entry errors, or legitimate differences in the data, and to decide whether to include or exclude them from the analysis.<br><br>
+
+Skewness: Check for skewness in the data and consider transforming the data or using robust statistical methods that are less sensitive to skewness, if necessary.<br><br>
+
+Conclusion: Summarize the findings of the EDA and make decisions about how to proceed with further analysis.
+
+           
+        </p>
+
+        <p>
+            <h3>Steps of doing Univariate Analysis on Categorical columns</h3>
+Descriptive Statistics: Compute the frequency distribution of the categories in the column. This will give a general understanding of the distribution of the categories and their relative frequencies.<br><br>
+Visualizations: Create visualizations to explore the distribution of the categories. Some common visualizations for categorical data include count plots and pie charts. These visualizations provide a visual representation of the distribution of the categories and can help identify any patterns or anomalies in the data.<br><br>
+Missing Values: Check for missing values in the data and decide how to handle them. Missing values can be imputed or excluded from the analysis, depending on the research question and the data set.
+Conclusion: Summarize the findings of the EDA and make decisions about how to proceed with further analysis.
+        </p>
+           </ul>
+
+          
+
+<p><h3>2.Bivariate Analysis</h3>
+    Steps of doing Bivariate Analysis<br><br>
+Select 2 cols Understand type of relationship<br><br>
+
+Numerical - Numerical<br><br>
+a. You can plot graphs like scatterplot(regression plots), 2D histplot, 2D KDEplots<br><br>
+b. Check correlation coefficent to check linear relationship<br><br>
+Numerical - Categorical - create visualizations that compare the distribution of the numerical data across different categories of thecategorical data.<br><br>
+a. You can plot graphs like barplot, boxplot, kdeplot violinplot even scatterplots<br><br>
+Categorical - Categorical<br><br>
+a. You can create cross-tabulations or contingency tables that show the distribution of values in one categorical column, grouped by the values in the other categorical column.<br><br>
+b. You can plots like heatmap, stacked barplots, treemaps<br><br>
+Write your conclusions
+</p>
+    <p>
+      Exploratory Data Analysis (EDA) is an essential step in data analysis that involves examining and visualizing data sets to understand their main characteristics, patterns, and potential relationships. EDA helps in identifying outliers, missing values, and gaining insights that can inform further analysis and decision-making.
+    </p>
+    <p>
+      In this project, we performed EDA on a dataset to gain insights into the factors influencing a specific outcome. We used various statistical and graphical techniques to explore the data and present meaningful conclusions.
+    </p>
+  </div>
+
+  <div class="team-section">
+    <h2>Meet the Team</h2>
+    <div class="team-member">
+      <img src="path/to/team-member-1.jpg" alt="Team Member 1">
+      <div>
+        <h3>Thimancherla Sandeep</h3>
+        <p>Data Scientist</p>
+      </div>
+    </div>
+    <div class="team-member">
+      <img src="path/to/team-member-2.jpg" alt="Team Member 2">
+      <div>
+        <h3>Sandy san</h3>
+        <p>Data Analyst</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="results-section">
+    <h2>Results and Insights</h2>
+    <p>
+      Through our exploratory data analysis, we discovered that there is a strong positive correlation between variable A and the outcome. Additionally, we found that variable B has a significant impact on the outcome, especially when combined with variable C.
+    </p>
+    <p>
+      These insights provide valuable information for decision-making and will guide our subsequent steps in the data analysis process.
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Exploratory Data Analysis Team. All rights reserved.</p>
+  </footer>
+</body>
+</html>

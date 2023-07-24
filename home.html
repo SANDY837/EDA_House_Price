@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced Home Page</title>
+  <style>
+    /* Reset some default styles for consistency */
+    body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: magenta;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: cyan;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    nav a {
+      color: magenta;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    nav a:hover {
+      background-color: white;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-size: cover;
+      background-position: center;
+      color: black;
+      text-align: center;
+      padding: 100px;
+    }
+    .hero ul {
+        list-style: none;
+      }
+
+    .hero li {
+        margin: 0 10px;
+      }
+
+    .hero a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 20px;
+      }
+    
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 24px;
+    }
+
+    /* Features Section */
+    .features {
+      background-color: #f1f1f1;
+      padding: 50px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .feature img {
+      max-width: 100px;
+      margin-right: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: magenta;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Data Analysis</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/service">Service</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/">Register</a></li>
+    </ul>
+  </nav>
+
+  <div class='hero'>
+    
+  
+
+   <h1>Exploratory Data Analysis of House Price Prediction</h1>
+   <ul>
+    <li><a href="{{ url_for('univariate') }}">1.Univariate Analysis on Numerical Columns</a></li>
+    <li><a href="{{ url_for('uni_categorical') }}">2.Univariate Analysis on Categorical Columns</a></li>
+    <li><a href="{{ url_for('bivariate') }}">3.Bivariate Analysis Numerical - Numerical</a></li>
+    
+  </ul>
+
+</div>
+
+
+  <footer>
+    <p>&copy; 2023 My Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
